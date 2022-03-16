@@ -11,6 +11,9 @@
 ###### Creation of table 1 - 'users'
 
 ```create table users(user_id tinyint primary key auto_increment,user_name varchar(20) not null check(length(user_name)>=3),user_mailId varchar(50) not null unique check(user_mailId like("_%@gmail.com")),user_password varchar(15) not null check(validate_password_strength(user_password)=100),join_date date not null);```
+
+<br>
+
 ```desc users;```
 
 ![describe users](https://user-images.githubusercontent.com/93571047/158520349-7827c435-6bd9-4956-93a6-c7edebde1bfc.png)
@@ -32,7 +35,7 @@
 
  ```insert into users(user_name,user_mailId,user_password,join_date) values("Pavan Raaj","pavan@gmail.com","Pavan@1234","2021-10-04"),("Venkatakkrishnan","venkat@gmail.com","Venki@1234","2021-10-04"),("Vaishnavi","vaishnavi@gmail.com","Vaishnavi@1234","2021-10-04");``` 
 
-###### Fetching the data in 'users' table
+###### Fetching the data from 'users' table
 
  ```select * from users;```
 
@@ -52,11 +55,13 @@
 
 ```insert into user_contacts values(1,9842448168),(2,7402066305),(3,7448354949),(4,7989899993),(4,9087654321),(4,9890988976),(5,9678876901),(6,9345678890),(7,9012345678),(8,9876543210),(9,9654321098),(10,9876900984),(11,7658904554);``` 
 
-###### Fetching the data in 'user_contacts' table
+###### Fetching the data from 'user_contacts' table
+
+```select * from user_contacts;```
 
 ![select * from user_contacts](https://user-images.githubusercontent.com/93571047/158523061-c03243c7-9af9-483d-8ca1-1e62d1cd24cb.png)
 
-###### creation of table 3 - 'user_address'
+###### Creation of table 3 - 'user_address'
 
 
  ``` create table user_address(user_Id tinyint unique,door_no varchar(10) not null,street varchar(30),city varchar(25) not null,state varchar(25) not null,`pin-code` int check(`pin-code` like("______")),foreign key(user_Id) references users(user_id)) ; ```
@@ -81,6 +86,30 @@
  
  
  
- ###### Fetching the data in 'user_address' table
+ ###### Fetching the data from 'user_address' table
+ 
+ ```select * from user_address;```
  
  ![select * from user_address](https://user-images.githubusercontent.com/93571047/158529465-b14406e4-1506-4848-8b0b-adbab59892c7.png)
+ 
+ ###### Creation of table 4 - 'students'
+ 
+ ```create table students(student_id tinyint unique,gender enum("M","F") not null,qualification enum("12th","Diploma") not null,batch tinyint not null,dob date not null,foreign key(student_id) references users(user_id));```
+ 
+ <br>
+ 
+ ```desc students;```
+ 
+ ![describe students](https://user-images.githubusercontent.com/93571047/158530533-91c75946-d1be-423d-bd92-b3c88bc384be.png)
+ 
+ ###### Insertion of records into 'students' table
+ 
+ ```insert into students values(5,"M","Diploma","02","2001-09-04"),(6,"M","12th","02","2003-11-04"),(7,"F","12th","02","2000-01-23"),(8,"F","12th","02","2003-09-23"),(9,"M","12th","02","2003-08-23"),(10,"M","12th","02","2004-04-23"),(11,"F","12th","02","2003-07-23");```
+ 
+ ###### Fetching data from 'students' table 
+ 
+ ```select * from students;```
+ 
+ ![select * from students](https://user-images.githubusercontent.com/93571047/158531605-b21bf5e8-7035-47a2-b68a-ad23bd26ca3d.png)
+ 
+ 
