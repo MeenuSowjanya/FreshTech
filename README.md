@@ -14,7 +14,7 @@
 
 #### ```desc users;```
 
-![Screenshot from 2022-03-16 10-27-43](https://user-images.githubusercontent.com/93571047/158519933-49c6fbe1-d501-4622-95c9-fec6e275ea5c.png)
+![describe users](https://user-images.githubusercontent.com/93571047/158520349-7827c435-6bd9-4956-93a6-c7edebde1bfc.png)
 
 ###### Insertion of Records into 'users' table
 
