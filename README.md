@@ -16,7 +16,7 @@
 ![describe users](https://user-images.githubusercontent.com/93571047/158520349-7827c435-6bd9-4956-93a6-c7edebde1bfc.png)
 
 ###### Insertion of Records into 'users' table
-<b>
+
  
  ```insert into users(user_name,user_mailId,user_password,join_date) values("Chitra Muthukumaran","chitram@gmail.com","Chitra@1234","2007/09/24");```
 
@@ -30,17 +30,17 @@
 
  ```insert into users(user_name,user_mailId,user_password,join_date) values("Kasi Antony","kasi@gmail.com","Kasi@1234","2021-10-04"),("Keerthana","keerthana@gmail.com","Keerthi@1234","2021-10-04"),("Meenu Sowjanya","msowjanyac@gmail.com","Meenu@1234","2021-10-04");```
 
- ```insert into users(user_name,user_mailId,user_password,join_date) values("Pavan Raaj","pavan@gmail.com","Pavan@1234","2021-10-04"),("Venkatakkrishnan","venkat@gmail.com","Venki@1234","2021-10-04"),("Vaishnavi","vaishnavi@gmail.com","Vaishnavi@1234","2021-10-04");``` </b>
+ ```insert into users(user_name,user_mailId,user_password,join_date) values("Pavan Raaj","pavan@gmail.com","Pavan@1234","2021-10-04"),("Venkatakkrishnan","venkat@gmail.com","Venki@1234","2021-10-04"),("Vaishnavi","vaishnavi@gmail.com","Vaishnavi@1234","2021-10-04");``` 
 
 ###### Fetching the data in 'users' table
 
-<b> ```select * from users;```</b>
+ ```select * from users;```
 
 ![select * from users](https://user-images.githubusercontent.com/93571047/158520738-970c5a7c-6101-4782-9fff-21187a64e67f.png)
 
 ###### Creation of table 2 - 'user_contacts'
 
-<b> ```create table user_contacts(user_id tinyint not null,user_phoneNo bigint check(user_phoneNo like("__________"),foreign key(user_id) references users(user_id));```</b>
+ ```create table user_contacts(user_id tinyint not null,user_phoneNo bigint check(user_phoneNo like("__________"),foreign key(user_id) references users(user_id));```
 
 ``` desc user_contacts; ```
 
@@ -48,9 +48,9 @@
 
 ###### Insertion of records into 'user_contacts' table
 
-<b> ```insert into user_contacts values(1,9442972004);``` 
+ ```insert into user_contacts values(1,9442972004);``` 
 
-```insert into user_contacts values(1,9842448168),(2,7402066305),(3,7448354949),(4,7989899993),(4,9087654321),(4,9890988976),(5,9678876901),(6,9345678890),(7,9012345678),(8,9876543210),(9,9654321098),(10,9876900984),(11,7658904554);``` </b>
+```insert into user_contacts values(1,9842448168),(2,7402066305),(3,7448354949),(4,7989899993),(4,9087654321),(4,9890988976),(5,9678876901),(6,9345678890),(7,9012345678),(8,9876543210),(9,9654321098),(10,9876900984),(11,7658904554);``` 
 
 ###### Fetching the data in 'user_contacts' table
 
@@ -58,18 +58,18 @@
 
 ###### creation of table 3 - 'user_address'
 
-<b>
+
  ``` create table user_address(user_Id tinyint unique,door_no varchar(10) not null,street varchar(30),city varchar(25) not null,state varchar(25) not null,`pin-code` int check(`pin-code` like("______")),foreign key(user_Id) references users(user_id)) ; ```
  
  ``` desc user_address; ```
  
  ![describe user_address](https://user-images.githubusercontent.com/93571047/158528840-d9e9962d-fdbe-43d1-b17f-e0b241e77efb.png)
  
- </b>
+ 
  
  ###### Insertion of records into 'user_address' table
  
- <b>
+ 
  
  ```insert into user_address values(1,"L-84","Police Colony","Annanagar (PO)","Trichy",620026);```
  
@@ -79,7 +79,7 @@
  
  ```insert into user_address values(4,"M-84","Police Colony","Annanagar (PO)","Chennai",620001),(5,"M-84","Arihant Nagar","Koyambedu (PO)","Chennai",620001),(6,"L-83","Perungudi","Kandanchavadi (PO)","Kanchipuram",620001),(7,"M-84","Police Colony","Kothagiri (PO)","Ooty",620010),(8,"M-84","Duraiappa Colony","Kayalpatinam(PO)","Thootukudi",620007),(9,"G-84","Collector Office Street","Avinasi (PO)","Tirupur",620009),(10,"P-84","Saibaba Colony","Boothamangalam (PO)","Coimbatore",620067),(11,"O-84","Police Colony","Perumangalam (PO)","Pondichery",620020);```
  
- </b>
+ 
  
  ###### Fetching the data in 'user_address' table
  
