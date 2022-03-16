@@ -123,3 +123,23 @@
  ![select * from students](https://user-images.githubusercontent.com/93571047/158531605-b21bf5e8-7035-47a2-b68a-ad23bd26ca3d.png)
  
  <hr>
+ 
+ ###### Creation of table 5 - 'admins'
+ 
+ ```create table admins(admin_id tinyint unique,gender enum("M","F") not null,`specialised in` enum("ELS","Technical","L&D","Admin") not null,dob date not null,foreign key(admin_id) references users(user_id));```
+ 
+ <br>
+ 
+ ```desc admins;```
+ 
+ ![describe admins](https://user-images.githubusercontent.com/93571047/158532691-e4ea5e5f-4c59-44c5-9fe3-a475876133b9.png)
+ 
+ ###### Inserton of records into 'admins' table
+ 
+ ```insert into admins values(1,"F","Technical","1990-10-23"),(2,"F","ELS","1960-01-02"),(3,"F","L&D","1994-03-24"),(4,"M","Admin","1984-01-26");```
+ 
+ ###### Fetching the data from 'admins' table
+ 
+ ![select * from admins](https://user-images.githubusercontent.com/93571047/158533132-4a6fca67-6565-4a3e-9bad-0788df063ce2.png)
+ 
+ <hr>
