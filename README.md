@@ -2,5 +2,5 @@
 
 ###### Creation of database - FreshTech
 
-#####  ```create database FreshTech;```
+####  ``` create database FreshTech; ```
 
