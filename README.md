@@ -1,5 +1,7 @@
 # &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```FreshTech App```
 
+<hr>
+
 ###### Creation of database - 'FreshTech'
 
  ```create database FreshTech;```
@@ -7,6 +9,8 @@
 ###### Using database - FreshTech
 
 ```use FreshTech;``` 
+
+<hr>
 
 ###### Creation of table 1 - 'users'
 
@@ -63,6 +67,8 @@
 
 ![select * from user_contacts](https://user-images.githubusercontent.com/93571047/158523061-c03243c7-9af9-483d-8ca1-1e62d1cd24cb.png)
 
+<hr>
+
 ###### Creation of table 3 - 'user_address'
 
 
@@ -94,6 +100,8 @@
  
  ![select * from user_address](https://user-images.githubusercontent.com/93571047/158529465-b14406e4-1506-4848-8b0b-adbab59892c7.png)
  
+ <hr>
+ 
  ###### Creation of table 4 - 'students'
  
  ```create table students(student_id tinyint unique,gender enum("M","F") not null,qualification enum("12th","Diploma") not null,batch tinyint not null,dob date not null,foreign key(student_id) references users(user_id));```
@@ -114,4 +122,4 @@
  
  ![select * from students](https://user-images.githubusercontent.com/93571047/158531605-b21bf5e8-7035-47a2-b68a-ad23bd26ca3d.png)
  
- 
+ <hr>
