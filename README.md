@@ -45,4 +45,12 @@
 
 ![describe user_contacts](https://user-images.githubusercontent.com/93571047/158522419-65fd18e1-dcf3-4d4c-be52-2f39305027e1.png)
 
-Heelo
+###### Insertion of records into 'user_contacts' table
+
+```insert into user_contacts values(1,9442972004);```
+
+```insert into user_contacts values(1,9842448168),(2,7402066305),(3,7448354949),(4,7989899993),(4,9087654321),(4,9890988976),(5,9678876901),(6,9345678890),(7,9012345678),(8,9876543210),(9,9654321098),(10,9876900984),(11,7658904554);```
+
+###### Fetching the data in 'user_contacts' table
+
+![select * from user_contacts](https://user-images.githubusercontent.com/93571047/158523061-c03243c7-9af9-483d-8ca1-1e62d1cd24cb.png)
