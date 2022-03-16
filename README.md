@@ -1,12 +1,12 @@
-# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```FreshTech App```
+# ```FreshTech App```
 
 ###### Creation of database - FreshTech
 
-#####  ```create database FreshTech;```
+<b> ```create database FreshTech;```</b>
 
 ###### Using database - FreshTech
 
-##### ```use FreshTech;```
+ ```use FreshTech;```
 
 ###### Creation of table 1 - 'users'
 
